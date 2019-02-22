@@ -12,7 +12,7 @@
 *.out
 
 # dep
-/vendor
+/src/vendor
 
 # mysql
 /mysql/data
