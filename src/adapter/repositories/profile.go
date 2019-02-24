@@ -18,7 +18,7 @@ func NewProfileRepository(db *gorm.DB) *profileRepository {
 	return &profileRepository{db: db}
 }
 
-func toProfileEntity(profile Profile) *entities.Profile {
+func toProfileEntity(profile *Profile) *entities.Profile {
 	return &entities.Profile{
 		Model: profile.Model,
 		Name:  profile.Name,
@@ -30,5 +30,5 @@ func (r *profileRepository) Create(name string) (*entities.Profile, error) {
 	if err := r.db.Create(&dbProfile).Error; err != nil {
 		return nil, err
 	}
-	return toProfileEntity(dbProfile), nil
+	return toProfileEntity(&dbProfile), nil
 }

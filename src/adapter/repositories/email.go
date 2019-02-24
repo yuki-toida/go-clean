@@ -19,7 +19,7 @@ func NewEmailRepository(db *gorm.DB) *emailRepository {
 	return &emailRepository{db: db}
 }
 
-func toEmailEntity(email Email) *entities.Email {
+func toEmailEntity(email *Email) *entities.Email {
 	return &entities.Email{
 		Model:  email.Model,
 		Email:  email.Email,
@@ -40,7 +40,7 @@ func (r *emailRepository) Create(userID uint64, email string) (*entities.Email, 
 	if err := r.db.Create(&e).Error; err != nil {
 		return nil, err
 	}
-	return toEmailEntity(e), nil
+	return toEmailEntity(&e), nil
 }
 
 func (r *emailRepository) Update(emailID uint64, email string) (*entities.Email, error) {
@@ -52,5 +52,5 @@ func (r *emailRepository) Update(emailID uint64, email string) (*entities.Email,
 	if err := r.db.Save(e).Error; err != nil {
 		return nil, err
 	}
-	return toEmailEntity(*e), nil
+	return toEmailEntity(e), nil
 }

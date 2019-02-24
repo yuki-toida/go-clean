@@ -58,10 +58,10 @@ func (r *userRepository) Find() ([]entities.User, error) {
 	for i, u := range dbUsers {
 		emails := make([]entities.Email, len(u.Emails))
 		for j, e := range u.Emails {
-			emails[j] = *toEmailEntity(e)
+			emails[j] = *toEmailEntity(&e)
 		}
 		users[i] = *toUserEntity(&u)
-		users[i].Profile = toProfileEntity(u.Profile)
+		users[i].Profile = toProfileEntity(&u.Profile)
 		users[i].Emails = emails
 	}
 	return users, nil
@@ -75,11 +75,11 @@ func (r *userRepository) First(userID uint64) (*entities.User, error) {
 
 	emails := make([]entities.Email, len(dbUser.Emails))
 	for i, v := range dbUser.Emails {
-		emails[i] = *toEmailEntity(v)
+		emails[i] = *toEmailEntity(&v)
 	}
 
 	user := toUserEntity(dbUser)
-	user.Profile = toProfileEntity(dbUser.Profile)
+	user.Profile = toProfileEntity(&dbUser.Profile)
 	user.Emails = emails
 	return user, nil
 }
