@@ -18,6 +18,7 @@ func main() {
 	db := mysql.Connect(c.DB.User, c.DB.Password, c.DB.Host, c.DB.Port, c.DB.Name)
 	defer mysql.Close()
 
+
 	db.LogMode(true)
 	db.DropTableIfExists(&repositories.User{}, &repositories.Profile{}, &repositories.Email{})
 	db.AutoMigrate(&repositories.User{}, &repositories.Profile{}, &repositories.Email{})
