@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf455b66-f389-4057-b0ed-c06776304afd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/adapter/controllers/endpoints/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adapter/controllers/services/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/toida.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+    <list default="true" id="1732ee3a-a05c-47dd-bc70-e5c34c9e59b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter/transports/transport_email/email.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter/transports/transport_user/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/usecase/usecase_email/email.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/usecase/usecase_user/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vscode/launch.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-clean.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapter/controllers/email.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapter/controllers/endpoints/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapter/controllers/services/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapter/controllers/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapter/repositories/email.go" beforeDir="false" afterPath="$PROJECT_DIR$/adapter/repositories/repository_email/email.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapter/repositories/profile.go" beforeDir="false" afterPath="$PROJECT_DIR$/adapter/repositories/repository_profile/profile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapter/repositories/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/adapter/repositories/repository_user/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/interactors/email.go" beforeDir="false" afterPath="$PROJECT_DIR$/application/interactors/interactor_email/email.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/interactors/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/application/interactors/interactor_user/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/repositories/email.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entities/entity_email/email_repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/repositories/profile.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entities/entity_profile/profile_repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/repositories/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entities/entity_user/user_repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/usecase/email.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/usecase/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/entities/email.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entities/entity_email/email.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/entities/profile.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entities/entity_profile/profile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/entities/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entities/entity_user/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/web/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/external/web/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry/interfaces/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/registry/interfaces/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry/interfaces/usecase.go" beforeDir="false" afterPath="$PROJECT_DIR$/registry/interfaces/usecase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/registry/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry/usecase.go" beforeDir="false" afterPath="$PROJECT_DIR$/registry/usecase.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,30 +47,57 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="go-clean" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/adapter/controllers/endpoints/user.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#19#133#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>decodeRequest</find>
+      <find>decodeDefaultRequest</find>
+      <find>userCreateRequest</find>
+      <find>MakeUser</find>
+      <find>DecodeUser</find>
+      <find>Email</find>
+      <find>profileRepository</find>
+      <find>toProfileEntity</find>
+      <find>toUserEntity</find>
+      <find>userRepository</find>
+      <find>emailInteractor</find>
+      <find>emailRepository</find>
+      <find>userInteractor</find>
+      <find>entities.Profile</find>
+      <find>entities.Email</find>
+      <find>application/repositories</find>
+      <find>repositories.UserRepository</find>
+      <find>repositories.ProfileRepository</find>
+      <find>entities.User</find>
+      <find>repositories.EmailRepository</find>
+      <find>entities</find>
+      <find>usecase.UserUseCase</find>
+      <find>email string</find>
+      <find>emailCreateRequest</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>decodeDefaultRequest</replace>
+      <replace>defaultDecodeRequest</replace>
+      <replace>Make</replace>
+      <replace>Decode</replace>
+      <replace>ToEntity</replace>
+      <replace>repository</replace>
+      <replace>interactor</replace>
+      <replace>entity_profile.Profile</replace>
+      <replace>entity_email.Email</replace>
+      <replace>entity_user.Repository</replace>
+      <replace>entity_profile.Repository</replace>
+      <replace>entity_user.User</replace>
+      <replace>entity_email.Repository</replace>
+      <replace>entity_user</replace>
+      <replace>usecase_user.UseCase</replace>
+      <replace>createRequest</replace>
+    </replaceStrings>
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12/libexec" />
   <component name="Git.Settings">
@@ -54,24 +109,52 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/external/config/config.go" />
         <option value="$PROJECT_DIR$/adapter/controllers/endpoints/user.go" />
+        <option value="$PROJECT_DIR$/adapter/controllers/transport/user.go" />
+        <option value="$PROJECT_DIR$/adapter/controllers/transports/user.go" />
+        <option value="$PROJECT_DIR$/adapter/controllers/transports/email.go" />
+        <option value="$PROJECT_DIR$/adapter/transports/email.go" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/application/interactors/interactor_email/user.go" />
+        <option value="$PROJECT_DIR$/application/usecase/email.go" />
+        <option value="$PROJECT_DIR$/application/usecase/user.go" />
+        <option value="$PROJECT_DIR$/registry/interfaces/repository.go" />
+        <option value="$PROJECT_DIR$/application/interactors/interactor_user/user.go" />
+        <option value="$PROJECT_DIR$/application/usecase/usecase_user/user.go" />
+        <option value="$PROJECT_DIR$/external/web/router.go" />
+        <option value="$PROJECT_DIR$/registry/interfaces/usecase.go" />
+        <option value="$PROJECT_DIR$/registry/usecase.go" />
+        <option value="$PROJECT_DIR$/registry/repository.go" />
+        <option value="$PROJECT_DIR$/adapter/transports/transport_user/user.go" />
+        <option value="$PROJECT_DIR$/application/interactors/interactor_email/email.go" />
+        <option value="$PROJECT_DIR$/application/usecase/usecase_email/email.go" />
+        <option value="$PROJECT_DIR$/adapter/transports/transport_email/email.go" />
+        <option value="$PROJECT_DIR$/domain/entities/entity_profile/profile_repository.go" />
+        <option value="$PROJECT_DIR$/domain/entities/entity_user/user_repository.go" />
+        <option value="$PROJECT_DIR$/domain/entities/entity_email/email_repository.go" />
+        <option value="$PROJECT_DIR$/domain/entities/entity_email/email.go" />
+        <option value="$PROJECT_DIR$/domain/entities/entity_profile/profile.go" />
+        <option value="$PROJECT_DIR$/domain/entities/entity_user/user.go" />
+        <option value="$PROJECT_DIR$/adapter/repositories/repository_user/user.go" />
+        <option value="$PROJECT_DIR$/adapter/repositories/repository_profile/profile.go" />
+        <option value="$PROJECT_DIR$/adapter/repositories/repository_email/email.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-275" />
+    <option name="x" value="365" />
     <option name="y" value="-1057" />
-    <option name="width" value="960" />
+    <option name="width" value="1280" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -84,16 +167,35 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551419403204" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/usecase/usecase_user" />
+      <recent name="$PROJECT_DIR$/application/usecase/usecase_email" />
+      <recent name="$PROJECT_DIR$/domain/entities/entity_email" />
+      <recent name="$PROJECT_DIR$/domain/entities/entity_profile" />
+      <recent name="$PROJECT_DIR$/domain/entities/entity_user" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/usecase" />
+      <recent name="$PROJECT_DIR$/domain/entities" />
+      <recent name="$PROJECT_DIR$/application/interactors" />
+      <recent name="$PROJECT_DIR$/adapter/repositories" />
+      <recent name="$PROJECT_DIR$/adapter/transports" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -107,47 +209,72 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-clean" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/yuki-toida/go-clean/src" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bf455b66-f389-4057-b0ed-c06776304afd" name="Default Changelist" comment="" />
-      <created>1551177258259</created>
+      <changelist id="1732ee3a-a05c-47dd-bc70-e5c34c9e59b9" name="Default Changelist" comment="" />
+      <created>1551234704752</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1551177258259</updated>
-      <workItem from="1551177261170" duration="390000" />
-      <workItem from="1551177688176" duration="504000" />
+      <updated>1551234704752</updated>
+      <workItem from="1551234707479" duration="1450000" />
+      <workItem from="1551236276146" duration="22240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="894000" />
+    <option name="totallyTimeSpent" value="23690000" />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-275" y="-1057" width="960" height="1057" extended-state="0" />
-    <editor active="true" />
+    <frame x="365" y="-1057" width="1280" height="1057" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25490198" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49913043" visible="true" weight="0.15670437" />
+      <window_info id="Structure" order="1" sideWeight="0.5008696" side_tool="true" weight="0.15670437" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5008696" side_tool="true" weight="0.15670437" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.32953367" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4983845" weight="0.3895966" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49919224" weight="0.32953367" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32908705" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" weight="0.32908705" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5016155" side_tool="true" weight="0.3895966" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -162,27 +289,322 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <proxy>direct</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.go">
+    <entry file="file://$PROJECT_DIR$/.idea/watcherTasks.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state>
+          <caret selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adapter/controllers/endpoints/user.go">
+    <entry file="file://$PROJECT_DIR$/.idea/.name">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../pkg/mod/github.com/gin-gonic/gin@v1.3.0/context.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="207">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/external/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adapter/controllers/services/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="e#19#133#0" expanded="true" />
+            <element signature="e#18#140#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12/libexec/src/runtime/asm_amd64.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="518" selection-start-line="518" selection-end-line="518" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12/libexec/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="549" column="13" lean-forward="true" selection-start-line="549" selection-start-column="12" selection-end-line="549" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12/libexec/src/net/http/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="1773" selection-start-line="1773" selection-end-line="1773" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12/libexec/src/context/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="231" selection-start-line="231" selection-end-line="231" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adapter/controllers/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="e#21#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adapter/controllers/email.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="40" column="15" lean-forward="true" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+          <folding>
+            <element signature="e#14#561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/entities/model.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registry/interfaces/usecase.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registry/usecase.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registry/interfaces/repository.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adapter/transports/transport_user/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#24#215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/usecase/usecase_user/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/interactors/interactor_email/email.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="e#26#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/interactors/interactor_user/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../pkg/mod/github.com/go-kit/kit@v0.8.0/transport/http/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/usecase/usecase_email/email.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adapter/transports/transport_email/email.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="e#25#194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/external/web/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding>
+            <element signature="e#13#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/entities/entity_profile/profile_repository.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/entities/entity_email/email_repository.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/entities/entity_email/email.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/entities/entity_profile/profile.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/entities/entity_user/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/entities/entity_user/user_repository.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adapter/repositories/repository_user/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1962">
+          <caret line="117" column="1" lean-forward="true" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registry/repository.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adapter/repositories/repository_email/email.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adapter/repositories/repository_profile/profile.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

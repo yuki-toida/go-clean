@@ -1,8 +1,10 @@
 package registry
 
 import (
-	"github.com/yuki-toida/go-clean/src/application/interactors"
-	"github.com/yuki-toida/go-clean/src/application/usecase"
+	"github.com/yuki-toida/go-clean/src/application/interactors/interactor_email"
+	"github.com/yuki-toida/go-clean/src/application/interactors/interactor_user"
+	"github.com/yuki-toida/go-clean/src/application/usecase/usecase_email"
+	"github.com/yuki-toida/go-clean/src/application/usecase/usecase_user"
 	"github.com/yuki-toida/go-clean/src/registry/interfaces"
 )
 
@@ -14,13 +16,13 @@ func NewUseCase(r interfaces.Repository) interfaces.UseCase {
 	return &useCase{repository: r}
 }
 
-func (u *useCase) NewUserUseCase() usecase.UserUseCase {
+func (u *useCase) NewUserUseCase() usecase_user.UseCase {
 	ur := u.repository.NewUserRepository()
 	pu := u.repository.NewProfileRepository()
-	return interactors.NewUserInteractor(ur, pu)
+	return interactor_user.New(ur, pu)
 }
 
-func (u *useCase) NewEmailUseCase() usecase.EmailUseCase {
+func (u *useCase) NewEmailUseCase() usecase_email.UseCase {
 	er := u.repository.NewEmailRepository()
-	return interactors.NewEmailInteractor(er)
+	return interactor_email.New(er)
 }
